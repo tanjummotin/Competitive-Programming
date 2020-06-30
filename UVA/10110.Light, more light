@@ -1,0 +1,26 @@
+///in the name of ALLAH
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    long long n;
+    while(1)
+    {scanf("%lli",&n);
+        if(n!=0)
+        {
+          ll r=sqrt(n);
+          if(r*r==n)///if it is a perfect square it has even number divisors.
+                    ///if n has even number of divisors,that means it toggle n times,,so it is on
+            cout<<"yes"<<endl;
+          else
+            cout<<"no"<<endl;
+        }
+        else
+            break;
+    }
+}
+
+
